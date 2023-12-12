@@ -3,6 +3,7 @@
 .counter{
  height: 50px;
 
+
 &__buttons {
     display: flex;
     justify-content: space-around;
@@ -10,11 +11,11 @@
 
 &--down, &--up {
     border: 2px solid $color-secondary;
-	border-radius: 5%;
+	border-radius: 90%;
     font-size: 1rem;
     padding: 10px 15px;
 	background-color: $color-secondary;
-	color: $color-primary;
+	color: $color-five;
 
 }
 

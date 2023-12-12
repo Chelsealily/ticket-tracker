@@ -6,13 +6,15 @@ import Counter from "../Counter/Counter";
 
 const EmployeeCards = () => {
   return team.map((card) => (
-    <section className="card">
-        <div className="card-content">
-          <h2 className="card-content__name">{card.name}</h2>
-          <h3 className="card-content__role">{card.role}</h3>
+    
+        <section className="card-content">
+          <div className="card-content__info">
+          <h2>{card.name}</h2>
+          <h3> 📎 {card.role}</h3>
+          </div>
           <Counter />
-        </div>
         </section>
+        
   ))
 }
 
