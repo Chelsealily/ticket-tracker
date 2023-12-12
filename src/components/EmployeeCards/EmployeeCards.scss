@@ -1,12 +1,23 @@
 @use "../../variables" as *;
 
+.card {
+    width: 99px;
+}
 
 .card-content {
     border: 2px solid $color-primary;
-    height: 30vh;
+    height: 280px;
     border-radius: 2%;
+    text-align: center;
 }
 
 h2 {
-    font-style: italic;
+    font-variant: small-caps;
+    font-size: 1.1rem;
 }
+
+h3 {
+    font-size: 1rem;
+}
+
+     

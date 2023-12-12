@@ -10,18 +10,23 @@ import "./Counter.scss"
   
     const handleDecrement = () => {
         setCount(count - 1);
+
+        if (count<0) {
+            setCount(0)
+        }
     };
 
 
     return (
       <div className="counter">
-        <h2>Counter</h2>
+        <h4>Counter</h4>
+        <p>{count}</p>
+        <div className="counter__buttons">
         <button className="counter--down" onClick={handleDecrement}>
          - </button>
-        {count}
         <button className="counter--up" onClick={handleIncrement}>
         +
-        </button>
+        </button></div>
       </div>
     );
   };  
