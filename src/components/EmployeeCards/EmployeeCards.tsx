@@ -1,17 +1,17 @@
 import team from "../../data/team";;
 import "./EmployeeCards.scss"
-import React from 'react'
+//import React from 'react'
 
 
 const EmployeeCards = () => {
-  return team.map((employee) => (
-    <div>
+  return team.map((card) => (
+    <section className="card">
         <div className="card-content">
-          <h1 className="card-content__name">{employee.name}</h1>
-          <h2 className="card-content__id">ID: {employee.id}</h2>
-          <h2 className="card-content__role">{employee.role}</h2>
+          <h2 className="card-content__name">{card.name}</h2>
+          <h3 className="card-content__id"># {card.id}</h3>
+          <h3 className="card-content__role">{card.role}</h3>
         </div>
-        </div>
+        </section>
   ))
 }
 

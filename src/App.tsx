@@ -8,9 +8,11 @@ function App() {
 
   return (
       <div>
+      <h1 className="title">Ticket Tracker</h1>
       <div className="tracker-content">
-        <h1 className="tracker-content__title">Ticket Tracker</h1>
+       
         <EmployeeCards/>
+        
       </div>
       </div>
     
