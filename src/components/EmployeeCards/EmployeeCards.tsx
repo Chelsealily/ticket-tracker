@@ -1,21 +1,24 @@
-import team from "../../data/team";;
 import "./EmployeeCards.scss"
-//import React from 'react'
 import Counter from "../Counter/Counter";
+import Team from "../../types/Teams";
+
+type employeeCardsProps = {
+  team: Team
+}
 
 
-const EmployeeCards = () => {
-  return team.map((card) => (
+const EmployeeCards = ({team}: employeeCardsProps) => {
+  return (
     
         <section className="card-content">
           <div className="card-content__info">
-          <h2>{card.name}</h2>
-          <h3> 📎 {card.role}</h3>
+          <h2>{team.name}</h2>
+          <h3> 📎 {team.role}</h3>
           </div>
           <Counter />
         </section>
         
-  ))
+  )
 }
 
 export default EmployeeCards

@@ -9,12 +9,14 @@ import "./Counter.scss"
       }
   
     const handleDecrement = () => {
-        setCount(count - 1);
+      if (count<1) {
+        setCount(count);
+      } else {
+       setCount(count - 1);
+      }
 
-        if (count<0) {
-            setCount(0)
-        }
-    };
+      }
+    
 
 
     return (

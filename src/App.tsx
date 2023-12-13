@@ -1,19 +1,23 @@
-//import { useState } from 'react'
 import './App.scss'
+import SearchResults from './components/Counter/SearchResults/SearchResults'
 import EmployeeCards from './components/EmployeeCards/EmployeeCards'
+import team from './data/team'
 
+  const App = () => {
 
-function App() {
-
+   
 
   return (
       <div>
-      <h1 className="title">Ticket Tracker</h1>
-      <div className="tracker-content">
-       
-        <EmployeeCards/>
         
+      <h1 className="title">Ticket Tracker</h1>
+     
+      <div className="tracker-content">
+      
+      {team.map(member => <EmployeeCards team={member} />)}
       </div>
+      <SearchResults team={team} />
+      
       </div>
     
   )
