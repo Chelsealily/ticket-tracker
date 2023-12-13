@@ -8,19 +8,19 @@ type searchResultsProps = {
     team: Team[]
 }
 
+
 const SearchResults = ({ team }: searchResultsProps) => {
 
 const [searchTerm, setSearchTerm] = useState<string>("");
-    
-const handleInput = (event: FormEvent<HTMLInputElement>) => {
-  const input = event.currentTarget.value.toLowerCase();
-  setSearchTerm(input);
-};
 
+const handleInput = (event: FormEvent<HTMLInputElement>) => {
+    const input = event.currentTarget.value.toLowerCase();
+  setSearchTerm(input);
+
+}
 const member = team.find(member =>
   member.name.toLowerCase().includes(searchTerm)
-);
-
+)
 
   return (
     <section>
