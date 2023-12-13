@@ -23,10 +23,13 @@ const member = team.find(member =>
 
 
   return (
-    <div>
+    <section>
     <Search searchTerm={searchTerm} handleInput={handleInput}/>
+
+    <div className="search-container">
     {member && <EmployeeCards team={member}/>}
     </div>
+    </section>
   )
 }
 
