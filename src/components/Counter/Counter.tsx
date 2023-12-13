@@ -16,9 +16,7 @@ import "./Counter.scss"
       }
 
       }
-    
-
-
+  
     return (
       <div className="counter">
         <h4>Counter</h4>
