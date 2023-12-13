@@ -1,5 +1,5 @@
 import './App.scss'
-import SearchResults from './components/Counter/SearchResults/SearchResults'
+import SearchResults from './components/SearchResults/SearchResults'
 import EmployeeCards from './components/EmployeeCards/EmployeeCards'
 import team from './data/team'
 

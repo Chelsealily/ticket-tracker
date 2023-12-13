@@ -1,8 +1,8 @@
 import "./SearchResults.scss"
-import Team from "../../../types/Teams";
+import Team from "../../types/Teams";
 import { useState, FormEvent } from 'react'
-import Search from "../../Search/Search";
-import EmployeeCards from "../../EmployeeCards/EmployeeCards";
+import Search from "../Search/Search";
+import EmployeeCards from "../EmployeeCards/EmployeeCards";
 
 type searchResultsProps = {
     team: Team[]
