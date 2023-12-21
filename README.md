@@ -10,4 +10,4 @@ This was a _nology project with the aim to create a ticket tracking system.
 <ul>3. The components should be generated using a map()</ul>
 
 ### Extension
-I completed one of the extensions where I added a search bar to the bottom of the page so that you could find an employee by their name
+I completed one of the extensions where I added a search bar to the top of the page so that you could find an employee by their name
